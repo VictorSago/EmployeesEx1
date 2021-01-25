@@ -16,6 +16,11 @@ namespace EmployeesEx1
             registry.Add(employee);
         }
 
+        public void AddEmployee(string name, int salary)
+        {
+            registry.Add(new Employee(name, salary));
+        }
+
         public string GetEmployees()
         {
             string result = "";

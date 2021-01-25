@@ -2,6 +2,7 @@ namespace EmployeesEx1
 {
     public class Employee
     {
+        // Jag har beslutat att inte använda Properties i den här övningen
         private string name;
         private int salary;
 
