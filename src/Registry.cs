@@ -1,3 +1,4 @@
+using System.Text;
 using System.Collections.Generic;
 
 namespace EmployeesEx1
@@ -23,12 +24,12 @@ namespace EmployeesEx1
 
         public string GetEmployees()
         {
-            string result = "";
+            StringBuilder result = new StringBuilder();
             foreach (var employee in registry)
             {
-                result += employee.ToString() + "\n";
+                result.AppendLine(employee.ToString());
             }
-            return result;
+            return result.ToString();
         }
 
     }
